@@ -29,9 +29,9 @@ export default async function EditPostPage({ params }: { params: Promise<{ slug:
         mode="edit"
         originalSlug={post.slug}
         defaultValues={{
-          slug:       post.slug,
-          titulo:     post.titulo,
-          resumo:     post.resumo,
+          slug:       post.slug ?? '',
+          titulo:     post.titulo ?? '',
+          resumo:     post.resumo ?? '',
           conteudo:   post.conteudo ?? '',
           categoria:  post.categoria as 'arcturianos' | 'vibracao' | 'despertar' | 'meditacao',
           imagem_url: post.imagem_url ?? '',
