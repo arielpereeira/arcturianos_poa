@@ -27,7 +27,7 @@ export default async function EditPostPage({ params }: { params: Promise<{ slug:
       <p className="mb-8 text-xs text-gold-pale/40 font-mono">/{post.slug}</p>
       <PostForm
         mode="edit"
-        originalSlug={post.slug}
+        originalSlug={post.slug ?? undefined}
         defaultValues={{
           slug:       post.slug ?? '',
           titulo:     post.titulo ?? '',

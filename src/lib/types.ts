@@ -2,7 +2,7 @@ export interface Profile {
   id: string
   email: string
   nome: string | null
-  is_admin: boolean
+  is_admin: boolean | string
   criado_em: string
 }
 
